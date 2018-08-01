@@ -1,0 +1,29 @@
+// Positive values + goes to the right, negative to the left
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80% {
+        transform: translateX(-1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80% {
+        transform: translateX(1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
