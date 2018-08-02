@@ -38,12 +38,14 @@ body {
 
 body {
   font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
   line-height: 2; }
 
 .heading1 {
-  letter-spacing: .5rem;
-  color: orangered; }
+  letter-spacing: .8rem;
+  color: orangered;
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 100; }
   .heading1--first {
     animation-name: moveInLeft;
     animation-duration: 2s;
@@ -65,6 +67,9 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
 
+.u-margin-top-small {
+  margin-top: 2rem !important; }
+
 .u-margin-top-big {
   margin-top: 8rem !important; }
 
@@ -72,4 +77,7 @@ body {
   margin-top: 10rem !important; }
 
 .header__logo {
-  height: 12rem; }
+  height: 14rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }

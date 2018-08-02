@@ -1,11 +1,15 @@
 .header {
 
     &__logo {
-        height: 12rem;
+        height: 14rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 
     &__logo-box {
-
+        // position: absolute;
     }
 
     &__text-box {
