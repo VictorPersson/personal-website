@@ -7,7 +7,7 @@ body {
 .heading1 {
     letter-spacing: .8rem;
     text-transform: uppercase;
-     //  display: block;
+    backface-visibility: hidden;
 
     &--first {
         animation-name: moveInLeft;
@@ -16,6 +16,7 @@ body {
         color: $color-pink-dark;
         font-size: 7rem;
         font-weight: 300;
+        display: inline-block;
     }
 
     &--second {
@@ -25,6 +26,7 @@ body {
         color: $color-pink-light;
         font-size: 5rem;
         font-weight: 100;
+        display: inline-block;
     }
 }
 

@@ -3,10 +3,11 @@
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(10rem);
+        transform: translateX(20rem);
     }
+
     80% {
-        transform: translateX(-1rem);
+        transform: translateX(-1.2rem);
     }
     100% {
         opacity: 1;
@@ -17,10 +18,11 @@
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-10rem);
+        transform: translateX(-20rem);
     }
+
     80% {
-        transform: translateX(1rem);
+        transform: translateX(1.2rem);
     }
     100% {
         opacity: 1;

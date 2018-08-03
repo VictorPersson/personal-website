@@ -1,9 +1,9 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem); }
+    transform: translateX(20rem); }
   80% {
-    transform: translateX(-1rem); }
+    transform: translateX(-1.2rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -11,9 +11,9 @@
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem); }
+    transform: translateX(-20rem); }
   80% {
-    transform: translateX(1rem); }
+    transform: translateX(1.2rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -42,21 +42,24 @@ body {
 
 .heading1 {
   letter-spacing: .8rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  backface-visibility: hidden; }
   .heading1--first {
     animation-name: moveInLeft;
     animation-duration: 2s;
     animation-timing-function: ease-out;
     color: #ff4455;
     font-size: 7rem;
-    font-weight: 300; }
+    font-weight: 300;
+    display: inline-block; }
   .heading1--second {
     animation-name: moveInRight;
     animation-duration: 2s;
     animation-timing-function: ease-out;
     color: #ff8899;
     font-size: 5rem;
-    font-weight: 100; }
+    font-weight: 100;
+    display: inline-block; }
 
 .u-center-text {
   text-align: center !important; }
