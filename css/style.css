@@ -42,18 +42,21 @@ body {
 
 .heading1 {
   letter-spacing: .8rem;
-  color: #fff;
-  font-size: 6rem;
-  text-transform: uppercase;
-  font-weight: 100; }
+  text-transform: uppercase; }
   .heading1--first {
     animation-name: moveInLeft;
     animation-duration: 2s;
-    animation-timing-function: ease-out; }
+    animation-timing-function: ease-out;
+    color: #ff4455;
+    font-size: 7rem;
+    font-weight: 300; }
   .heading1--second {
     animation-name: moveInRight;
     animation-duration: 2s;
-    animation-timing-function: ease-out; }
+    animation-timing-function: ease-out;
+    color: #ff8899;
+    font-size: 5rem;
+    font-weight: 100; }
 
 .u-center-text {
   text-align: center !important; }
@@ -76,11 +79,15 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
-.header {
-  height: 400px;
-  background-image: radial-gradient(#ff8899, #ff4455); }
-  .header__logo {
-    height: 14rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
+.header__logo {
+  height: 14rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.middle {
+  height: 500px;
+  background-image: linear-gradient(#ff4455, #ff6677);
+  background-size: cover;
+  background-position: center;
+  position: relative; }

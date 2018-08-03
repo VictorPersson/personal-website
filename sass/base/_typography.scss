@@ -6,22 +6,25 @@ body {
 
 .heading1 {
     letter-spacing: .8rem;
-    color: $color-white;
-    font-size: 6rem;
     text-transform: uppercase;
-    font-weight: 100;
      //  display: block;
 
     &--first {
         animation-name: moveInLeft;
         animation-duration: 2s;
         animation-timing-function: ease-out;
+        color: $color-pink-dark;
+        font-size: 7rem;
+        font-weight: 300;
     }
 
     &--second {
         animation-name: moveInRight;
         animation-duration: 2s;
         animation-timing-function: ease-out;
+        color: $color-pink-light;
+        font-size: 5rem;
+        font-weight: 100;
     }
 }
 
