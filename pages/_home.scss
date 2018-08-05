@@ -1,12 +1,19 @@
 .section-1 { 
+    z-index: 5000;
     height: 125vh;
-    background-size: cover;
-    background-image: linear-gradient(
-        to right,
-        rgba($color-purple-medium, .9),
-        rgba($color-purple-dark, .9));
+    background-color: rgba($color-grey-dark-2, .4);
 
         -webkit-clip-path: polygon(0 2%, 100% 6%, 100% 81%, 0 61%);
         clip-path: polygon(0 2%, 100% 6%, 100% 81%, 0 61%);
 
-}
+        &--secondary {
+            height: 150vh;
+            background: linear-gradient(
+                to right,
+                rgba($color-purple-medium, .9),
+                rgba($color-purple-dark, .9));
+        
+            -webkit-clip-path: polygon(0 2%, 100% 6%, 100% 81%, 0 61%);
+            clip-path: polygon(0 2%, 100% 6%, 100% 81%, 0 61%);
+        }
+    }
