@@ -13,20 +13,20 @@ body {
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
-        color: $color-pink-dark;
-        font-size: 7rem;
+        font-size: 7.5rem;
         font-weight: 300;
         display: inline-block;
+        color: $color-purple-medium;
     }
 
     &--second {
         animation-name: moveInRight;
         animation-duration: 1s;
         animation-timing-function: ease-out;
-        color: $color-pink-light;
         font-size: 5rem;
         font-weight: 100;
         display: inline-block;
+        color: $color-purple-medium;
     }
 }
 

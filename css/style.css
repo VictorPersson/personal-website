@@ -33,7 +33,7 @@ body {
   box-sizing: border-box; }
 
 ::selection {
-  background-color: orangered;
+  background-color: #c51162;
   color: #fff; }
 
 body {
@@ -48,18 +48,18 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-    color: #ff4455;
-    font-size: 7rem;
+    font-size: 7.5rem;
     font-weight: 300;
-    display: inline-block; }
+    display: inline-block;
+    color: #c51162; }
   .heading1--second {
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-    color: #ff8899;
     font-size: 5rem;
     font-weight: 100;
-    display: inline-block; }
+    display: inline-block;
+    color: #c51162; }
 
 .u-center-text {
   text-align: center !important; }
@@ -89,5 +89,8 @@ body {
   margin-right: auto; }
 
 .section-1 {
-  background-color: #ff4455;
-  padding: 25rem; }
+  height: 125vh;
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(197, 17, 98, 0.9), rgba(109, 9, 89, 0.9));
+  -webkit-clip-path: polygon(0 2%, 100% 6%, 100% 81%, 0 61%);
+  clip-path: polygon(0 2%, 100% 6%, 100% 81%, 0 61%); }
