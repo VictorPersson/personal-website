@@ -4,7 +4,7 @@ body {
 
 }
 
-.heading1 {
+.heading__front {
     letter-spacing: .8rem;
     text-transform: uppercase;
     backface-visibility: hidden;
@@ -29,6 +29,18 @@ body {
         color: $color-purple-medium;
     }
 }
+
+.heading-primary {
+    font-size: 5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-white;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    color: $color-white;
+ }
 
 
 

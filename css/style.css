@@ -40,11 +40,11 @@ body {
   font-family: 'Quicksand', sans-serif;
   line-height: 2; }
 
-.heading1 {
+.heading__front {
   letter-spacing: .8rem;
   text-transform: uppercase;
   backface-visibility: hidden; }
-  .heading1--first {
+  .heading__front--first {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -52,7 +52,7 @@ body {
     font-weight: 300;
     display: inline-block;
     color: #c51162; }
-  .heading1--second {
+  .heading__front--second {
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -60,6 +60,16 @@ body {
     font-weight: 100;
     display: inline-block;
     color: #c51162; }
+
+.heading-primary {
+  font-size: 5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff; }
+
+.paragraph {
+  font-size: 1.6rem;
+  color: #fff; }
 
 .u-center-text {
   text-align: center !important; }
@@ -82,6 +92,33 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  /* margin: 0 auto; centers the block element, inside another block element */ }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
 .header__logo {
   height: 11rem;
   display: block;
@@ -89,13 +126,18 @@ body {
   margin-right: auto; }
 
 .section-1 {
-  z-index: 5000;
-  height: 125vh;
-  background-color: rgba(153, 153, 153, 0.4);
-  -webkit-clip-path: polygon(0 2%, 100% 6%, 100% 81%, 0 61%);
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 150vh;
+  background: linear-gradient(to right, #c51162, #6d0959);
+  -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%);
   clip-path: polygon(0 2%, 100% 6%, 100% 81%, 0 61%); }
-  .section-1--secondary {
-    height: 150vh;
-    background: linear-gradient(to right, rgba(197, 17, 98, 0.9), rgba(109, 9, 89, 0.9));
-    -webkit-clip-path: polygon(0 2%, 100% 6%, 100% 81%, 0 61%);
-    clip-path: polygon(0 2%, 100% 6%, 100% 81%, 0 61%); }
+
+.section-1-background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0.3));
+  -webkit-clip-path: polygon(0 7%, 100% 0, 100% 50%, 0 50%);
+  clip-path: polygon(0 7%, 100% 0, 100% 50%, 0 50%); }
