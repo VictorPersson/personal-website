@@ -125,6 +125,23 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+.footer {
+  margin-top: 25rem;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  height: 400px;
+  background: linear-gradient(to right, #c51162, #6d0959);
+  -webkit-clip-path: polygon(0 8%, 100% 34%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 8%, 100% 34%, 100% 100%, 0% 100%); }
+
+.footer-background {
+  margin-top: 23rem;
+  height: 360px;
+  background: linear-gradient(rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0.3));
+  -webkit-clip-path: polygon(0 28%, 100% 23%, 100% 58%, 0 60%);
+  clip-path: polygon(0 28%, 100% 23%, 100% 58%, 0 60%); }
+
 .section-1 {
   z-index: 1;
   position: absolute;
@@ -135,8 +152,6 @@ body {
   clip-path: polygon(0 2%, 100% 6%, 100% 81%, 0 61%); }
 
 .section-1-background {
-  position: absolute;
-  width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0.3));
   -webkit-clip-path: polygon(0 7%, 100% 0, 100% 50%, 0 50%);

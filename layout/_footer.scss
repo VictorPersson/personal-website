@@ -1,0 +1,31 @@
+.footer  {
+    
+    margin-top: 25rem;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 400px;
+    background: linear-gradient(
+        to right,
+        rgba($color-purple-medium, 1),
+        rgba($color-purple-dark, 1));
+
+    -webkit-clip-path: polygon(0 8%, 100% 34%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 8%, 100% 34%, 100% 100%, 0% 100%);
+
+
+    }
+
+.footer-background {
+    
+    margin-top: 23rem;
+    height:  360px;
+    background: linear-gradient(
+                rgba($color-grey-dark-2, .3),
+                rgba($color-grey-dark-2, .3));
+
+        -webkit-clip-path: polygon(0 28%, 100% 23%, 100% 58%, 0 60%);
+        clip-path: polygon(0 28%, 100% 23%, 100% 58%, 0 60%);
+        
+
+}
