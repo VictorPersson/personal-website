@@ -1,4 +1,4 @@
-.section-1 { 
+.main { 
     z-index: 1;
     position: absolute;
     width: 100%;
@@ -11,9 +11,33 @@
     -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%);
     clip-path: polygon(0 2%, 100% 6%, 100% 81%, 0 61%);
 
+    &__text {
+        color: $color-white;
+        font-size: 1.8rem;
     }
 
-.section-1-background {
+    &__box {
+        margin-left: 15rem;
+
+    }
+
+    &__ul {
+
+    }
+
+    &__li {
+        color: $color-white;
+        font-size: 1.8rem;
+        list-style: none;
+    }
+
+    &__link {
+        
+
+    }
+}
+
+.main-background {
 
     height:  100vh;
     background: linear-gradient(
