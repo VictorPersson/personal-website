@@ -1,5 +1,5 @@
 .footer  {
-    
+    padding: 10rem 0;
     margin-top: 25rem;
     position: absolute;
     width: 100%;
@@ -13,8 +13,24 @@
     -webkit-clip-path: polygon(0 8%, 100% 34%, 100% 100%, 0% 100%);
     clip-path: polygon(0 8%, 100% 34%, 100% 100%, 0% 100%);
 
+    &__copy-right {
+        color: $color-white;
+        font-size: 1.8rem;
+        
+    }
+
+    &__ul {
+
+    }  
+
+    &__li{
 
     }
+
+    &__link {
+        
+    }
+}
 
 .footer-background {
     
@@ -27,5 +43,4 @@
         -webkit-clip-path: polygon(0 28%, 100% 23%, 100% 58%, 0 60%);
         clip-path: polygon(0 28%, 100% 23%, 100% 58%, 0 60%);
         
-
 }
