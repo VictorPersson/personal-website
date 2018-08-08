@@ -31,10 +31,14 @@ body {
 }
 
 .heading-primary {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 300;
     text-transform: uppercase;
     color: $color-white;
+
+    animation-name: moveInTop;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in;
 }
 
 .paragraph {
