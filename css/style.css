@@ -148,7 +148,15 @@ body {
   clip-path: polygon(0 8%, 100% 34%, 100% 100%, 0% 100%); }
   .footer__copy-right {
     color: #fff;
-    font-size: 1.8rem; }
+    font-size: 1.3rem; }
+  .footer__li {
+    float: left;
+    font-size: 1.4rem;
+    list-style: none;
+    padding: 2.3rem; }
+  .footer__link {
+    color: #fff;
+    text-decoration: none; }
 
 .footer-background {
   margin-top: 23rem;
@@ -177,6 +185,9 @@ body {
   .main__link {
     color: #fff;
     text-decoration: none; }
+  .main__li-logo {
+    width: 7rem;
+    color: #fff; }
 
 .main-background {
   height: 100vh;
