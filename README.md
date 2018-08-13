@@ -10,7 +10,7 @@ Built using SASS, SCSS and JavaScript
   <li>Back in your termial/CMD write, $ 'npm run victor' (This will start a local live-server in your browser, while also compiling the SASS files so that you may edit the code)</li>
  </ol>
 
-
-
-<br>
-<i>© 2018 Code & design by Victor Persson </i>
+<p align="center">
+  <img src="https://i.imgur.com/PpIRTzo.png"><br>
+  <i>© 2018 Code & design by Victor Persson </i>
+</p>
