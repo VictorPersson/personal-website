@@ -131,6 +131,7 @@ body {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header__logo {
+  background-image: linear-gradient(to right top, #c51162, rgba(109, 9, 89, 0.8));
   height: 11rem;
   display: block;
   margin-left: auto;
@@ -157,6 +158,8 @@ body {
   .footer__link {
     color: #fff;
     text-decoration: none; }
+  .footer__image {
+    width: 10rem; }
 
 .footer-background {
   margin-top: 23rem;
