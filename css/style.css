@@ -154,7 +154,7 @@ body {
     float: left;
     font-size: 1.4rem;
     list-style: none;
-    padding: 2.3rem; }
+    padding: 1.3rem; }
   .footer__link {
     color: #fff;
     text-decoration: none; }
@@ -183,14 +183,14 @@ body {
     margin-left: 15rem; }
   .main__li {
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     list-style: none; }
   .main__link {
     color: #fff;
     text-decoration: none; }
   .main__li-logo {
-    width: 7rem;
-    color: #fff; }
+    color: #fff;
+    padding: 1rem; }
 
 .main-background {
   height: 100vh;

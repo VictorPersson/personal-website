@@ -27,7 +27,7 @@
 
     &__li {
         color: $color-white;
-        font-size: 1.8rem;
+        font-size: 2.8rem;
         list-style: none;
     }
 
@@ -37,8 +37,8 @@
     }
 
     &__li-logo {
-        width: 7rem;
         color: $color-white;
+        padding: 1rem;
     }
 }
 
