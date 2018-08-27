@@ -1,6 +1,6 @@
 # Personal website - Victor Persson
 Built using SASS, SCSS and JavaScript
- #### NOTE: This GitHub repository is uploaded by a developer for developers. The idea is to showcase my workflow, file structure and tools I use when coding. Therfore there will be no finalized or minimized .css file, hence all the SCSS and SASS files. 
+ #### NOTE: This GitHub repository is uploaded by a developer for developers. The idea is to showcase my workflow, file structure and tools I use when developing websites. Therfore, there will be no finalized or minimized .css file, hence all the SCSS and SASS files. 
  ---
 #### How to open in "dev mode":
 <ol>
