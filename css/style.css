@@ -103,6 +103,15 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.u-margin-left-small {
+  margin-left: 1.5rem !important; }
+
+.u-margin-left-medium {
+  margin-left: 4rem !important; }
+
+.u-margin-left-big {
+  margin-left: 8rem !important; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -187,6 +196,7 @@ body {
   .main__box {
     margin-left: 13rem; }
   .main__li {
+    padding: 1rem;
     font-size: 8.8rem;
     list-style: none;
     line-height: 1.45em; }
@@ -194,10 +204,16 @@ body {
     color: #fff;
     text-decoration: none; }
   .main__li-logo {
-    color: #fff; }
+    color: #fff;
+    -webkit-transition: 1s ease-out;
+    -moz-transition: 1s ease-out;
+    transition: 1s ease-out; }
     .main__li-logo:hover {
       color: greenyellow;
-      font-size: 9.2rem; }
+      font-size: 11rem;
+      -webkit-transform: rotateZ(360deg);
+      -moz-transform: rotateZ(360deg);
+      transform: rotateZ(360deg); }
 
 .main-background {
   height: 100vh;

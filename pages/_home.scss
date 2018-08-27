@@ -26,6 +26,7 @@
     }
 
     &__li {
+        padding: 1rem;
         font-size: 8.8rem;
         list-style: none;
         line-height: 1.45em;
@@ -38,10 +39,16 @@
 
     &__li-logo {
         color: $color-white;
+        -webkit-transition: 1s ease-out;
+        -moz-transition: 1s ease-out;
+        transition: 1s ease-out;
 
         &:hover {
             color: greenyellow;
-            font-size: 9.2rem;
+            font-size: 11rem;
+            -webkit-transform: rotateZ(360deg);
+            -moz-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
         }
     }
 }
