@@ -6,8 +6,8 @@ Built using SASS, SCSS and JavaScript
 <ol>
   <li>Clone the GitHub repo</li>
   <li>Head on over to your terminal/CMD, navigate to the relevant repo folder/dic</li>
-  <li>Write $ 'npm install' (this will install all the various dependencies you need to work with the files - you can review them in the package.json file)</li>
-  <li>Back in your termial/CMD write, $ 'npm run victor' (This will start a local live-server in your browser, while also compiling the SASS files so that you may edit the code)</li>
+  <li>Write 'npm install' (this will install all the various dependencies you need to work with the files - you can review them in the package.json file)</li>
+  <li>Back in your termial/CMD write, 'npm run victor' (This will start a local live-server in your browser, while also compiling the SASS files so that you may edit the code)</li>
  </ol>
 
 <p align="center">
