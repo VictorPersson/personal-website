@@ -11,6 +11,6 @@ Built using SASS, SCSS and JavaScript
  </ol>
 
 <p align="center">
-  <img src="https://i.imgur.com/PpIRTzo.png"><br>
+  <img src="https://i.imgur.com/Pn4eHyK.png"><br>
   <i>© 2018 Code & design by Victor Persson </i>
 </p>
