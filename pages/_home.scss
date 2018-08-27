@@ -28,6 +28,7 @@
     &__li {
         font-size: 8.8rem;
         list-style: none;
+        line-height: 1.45em;
     }
 
     &__link {
@@ -37,6 +38,11 @@
 
     &__li-logo {
         color: $color-white;
+
+        &:hover {
+            color: greenyellow;
+            font-size: 9.2rem;
+        }
     }
 }
 

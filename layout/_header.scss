@@ -1,13 +1,17 @@
 .header {
     
     &__logo {
-        background-image: linear-gradient(to right top,
-        rgba($color-purple-medium, 1), 
-        rgba($color-purple-dark, 0.8));
-        height: 11rem;
+        //background-image: linear-gradient(to right top,
+        //rgba($color-purple-medium, 1), 
+        //rgba($color-purple-dark, 0.8));
+        width: 15rem;
         display: block;
         margin-left: auto;
         margin-right: auto; 
+
+        &:hover {
+            width: 17rem;
+        }
 
     }
 
