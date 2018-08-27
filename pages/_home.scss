@@ -38,17 +38,21 @@
     }
 
     &__li-logo {
-        color: $color-white;
+        color: rgba($color-white, 0.7);
         -webkit-transition: 1s ease-out;
         -moz-transition: 1s ease-out;
         transition: 1s ease-out;
 
         &:hover {
-            color: greenyellow;
-            font-size: 11rem;
+            font-size: 10.4rem;
+            color: rgba($color-white, 1);
             -webkit-transform: rotateZ(360deg);
             -moz-transform: rotateZ(360deg);
             transform: rotateZ(360deg);
+        }
+
+        &:active {
+            font-size: 8rem;
         }
     }
 }
