@@ -7,7 +7,7 @@
     }
 
     80% {
-        transform: translateX(-1.2rem);
+        transform: translateX(-8rem);
     }
     100% {
         opacity: 1;
@@ -22,18 +22,18 @@
     }
 
     80% {
-        transform: translateX(1.2rem);
+        transform: translateX(8rem);
     }
     100% {
         opacity: 1;
-        transform: translate(0);
+        transform: translate(7);
     }
 }
 
 @keyframes moveInTop {
     0% {
         opacity: 1;
-        transform: translateY(-27rem);
+        transform: translateY(-30rem);
     }
 
     100% {
