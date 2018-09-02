@@ -78,6 +78,12 @@ body {
   animation-duration: 1.4s;
   animation-timing-function: ease-in; }
 
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #c51162; }
+
 .paragraph {
   font-size: 1.6rem;
   color: #fff; }
@@ -234,4 +240,67 @@ body {
   clip-path: polygon(0 7%, 100% 0, 100% 50%, 0 50%); }
 
 .section-2 {
-  width: 100%; }
+  width: 100%;
+  padding: 10rem 0 0; }
+
+.card {
+  perspective: 50rem;
+  -moz-prefix: 50rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    height: 40rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.18);
+    overflow: hidden; }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      background: linear-gradient(to left bottom, #c511a1, #c51162);
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__image {
+    background-size: cover;
+    height: 20rem;
+    background-blend-mode: screen; }
+    .card__image--1 {
+      background-image: linear-gradient(to left bottom, #c511a1, #c51162), url(../img/politweet.png);
+      -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 77%, 70% 91%, 47% 95%, 23% 92%, 0 95%);
+      clip-path: polygon(0% 0%, 100% 0, 100% 77%, 70% 91%, 47% 95%, 23% 92%, 0 95%); }
+    .card__image--2 {
+      background-image: linear-gradient(to left bottom, #c511a1, #c51162), url(../img/personal-website.png);
+      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 68% 96%, 49% 93%, 26% 94%, 0 100%);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 68% 96%, 49% 93%, 26% 94%, 0 100%); }
+    .card__image--3 {
+      background-image: linear-gradient(to left bottom, #c511a1, #c51162), url(../img/clappy-bird.png);
+      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 79% 93%, 51% 100%, 24% 85%, 0 78%);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 79% 93%, 51% 100%, 24% 85%, 0 78%); }
+    .card__image--4 {
+      background-image: linear-gradient(to left bottom, #c511a1, #c51162), url(../img/discord-bot.png);
+      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 79% 93%, 60% 94%, 31% 93%, 0 100%);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 79% 93%, 60% 94%, 31% 93%, 0 100%); }
+  .card__header {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.85rem;
+    background: linear-gradient(to left bottom, #c511a1, #c51162); }
+  .card__li-header {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-top: .8rem; }
+  .card__li-text {
+    font-size: 1rem;
+    list-style: none;
+    margin: 0 auto; }
+    .card__li-text:not(:last-child) {
+      border-bottom: 1px solid #eee;
+      width: 80%; }

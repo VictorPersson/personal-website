@@ -1,0 +1,119 @@
+.card {
+    perspective: 50rem;
+    -moz-prefix: 50rem;
+    position: relative;
+    height: 50rem;
+
+    &__side {
+        height: 40rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        // Hides the back-part of an element
+        backface-visibility: hidden;
+        border-radius: 8px;
+        box-shadow: $box-shadow;
+        overflow: hidden;
+
+        &--front {
+            background-color: $color-white;
+        }
+
+        &--back {
+            background: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium);
+            transform: rotateY(180deg);
+
+
+            &-1 {
+
+            }  
+
+            &-2 {
+
+            }
+
+            &-3 {
+
+            }
+
+            &-4 {
+
+            }
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    &__image {
+        background-size: cover;
+        height: 20rem;
+        background-blend-mode: screen;
+
+        &--1 {
+            background-image: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium),
+            url(../img/politweet.png);
+            -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 77%, 70% 91%, 47% 95%, 23% 92%, 0 95%);
+            clip-path: polygon(0% 0%, 100% 0, 100% 77%, 70% 91%, 47% 95%, 23% 92%, 0 95%);
+
+        }
+
+        &--2 {
+            background-image: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium),
+            url(../img/personal-website.png);
+            -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 68% 96%, 49% 93%, 26% 94%, 0 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 68% 96%, 49% 93%, 26% 94%, 0 100%);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium),
+            url(../img/clappy-bird.png);
+            -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 79% 93%, 51% 100%, 24% 85%, 0 78%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 79% 93%, 51% 100%, 24% 85%, 0 78%);
+
+        }
+
+        &--4 {
+            background-image: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium),
+            url(../img/discord-bot.png);
+            -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 79% 93%, 60% 94%, 31% 93%, 0 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 79% 93%, 60% 94%, 31% 93%, 0 100%);
+        }
+    }
+
+    &__header {
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 1.85rem;
+        background: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium);
+    }
+
+    &__text {
+    }
+
+
+    &__li-header {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        padding-top: .8rem;
+
+    }
+
+    &__li-text {
+        font-size: 1rem;
+        list-style: none;
+        margin: 0 auto;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $color-grey-light-2;
+            width: 80%;
+        }
+    }
+}
