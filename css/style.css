@@ -304,3 +304,6 @@ body {
     .card__li-text:not(:last-child) {
       border-bottom: 1px solid #eee;
       width: 80%; }
+  .card__li-status {
+    padding-top: .8rem;
+    font-size: 1.3rem; }
