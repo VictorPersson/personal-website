@@ -1,11 +1,11 @@
 .card {
-    perspective: 50rem;
-    -moz-prefix: 50rem;
+    perspective: 150rem;
+    -moz-prefix: 160rem;
     position: relative;
-    height: 50rem;
+    height: 40rem;
 
     &__side {
-        height: 40rem;
+        height: 45rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -90,9 +90,10 @@
 
     &__header {
         text-transform: uppercase;
-        font-weight: 200;
+        font-weight: 400;
         font-size: 1.85rem;
-        background: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium);
+        color: $color-purple-dark;
+        // background-color: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium);
     }
 
     &__text {
