@@ -37,10 +37,6 @@
         width: 18rem;
     }
 
-    &__ul {
-
-    }  
-
     &__li { 
         float: left;
         font-size: 2rem;
@@ -58,7 +54,6 @@
             color: $color-white;
             transform: ease-in;
             text-decoration: underline;
-
 
         }    
     }
