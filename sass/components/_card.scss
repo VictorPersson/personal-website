@@ -25,24 +25,8 @@
             background: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium);
             transform: rotateY(180deg);
 
-
-            &-1 {
-
-            }  
-
-            &-2 {
-
-            }
-
-            &-3 {
-
-            }
-
-            &-4 {
-
             }
         }
-    }
 
     &:hover &__side--front {
         transform: rotateY(-180deg);
@@ -67,7 +51,7 @@
 
         &--2 {
             background-image: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium),
-            url(../img/personal-website.png);
+            url(../img/personal_web.png);
             -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 68% 96%, 49% 93%, 26% 94%, 0 100%);
             clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 68% 96%, 49% 93%, 26% 94%, 0 100%);
         }
@@ -93,10 +77,15 @@
         font-weight: 400;
         font-size: 1.85rem;
         color: $color-purple-dark;
-        // background-color: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium);
-    }
 
-    &__text {
+        &--back {
+            color: $color-white;
+            text-transform: uppercase;
+            font-weight: 200;
+            font-size: 1.85rem;
+
+        }
+        // background-color: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium);
     }
 
 
@@ -111,6 +100,7 @@
         font-size: 1rem;
         list-style: none;
         margin: 0 auto;
+        color: $color-purple-light;
 
         &:not(:last-child) {
             border-bottom: 1px solid $color-grey-light-2;
@@ -121,5 +111,29 @@
     &__li-status {
         padding-top: .8rem;
         font-size: 1.3rem;
+        color: $color-purple-light;
+    }
+
+
+
+    &__link--logo {
+        color: rgba($color-white, 0.7);
+        -webkit-transition: .3s ease-in;
+        -moz-transition: .3s ease-in;
+        transition: .3s ease-in;
+        font-size: 12rem;
+        margin: 0 auto;
+
+        
+        &:hover {
+            color: rgba($color-white, 1);
+            -webkit-transform: rotateZ(360deg);
+            -moz-transform: rotateZ(360deg);
+            transform: rotateY(360deg);
+        }
+
+        &:active {
+            font-size: 8rem;
+        }
     }
 }

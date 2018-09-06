@@ -49,15 +49,31 @@
     }
 
     &__link {
-        color: $color-white;
+        color: rgba($color-white, 0.8);
         text-decoration: none;
         transition: 1s;
 
+
         &:hover {
-            color: limegreen;
-            transform: ease-out;
+            color: $color-white;
+            transform: ease-in;
             text-decoration: underline;
+
+
         }    
+    }
+
+    &__li-logo {
+        -webkit-transition: 1.5s ease-out;
+        -moz-transition: 1.5s ease-out;
+        transition: 1s ease-out;
+
+        &:hover {
+            -webkit-transform: rotateZ(360deg);
+            -moz-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+            color: $color-white;
+        }
     }
 }
 

@@ -39,12 +39,12 @@
 
     &__li-logo {
         color: rgba($color-white, 0.7);
-        -webkit-transition: 1s ease-out;
-        -moz-transition: 1s ease-out;
+        -webkit-transition: 1.5s ease-out;
+        -moz-transition: 1.5s ease-out;
         transition: 1s ease-out;
 
         &:hover {
-            font-size: 10.4rem;
+            font-size: 11rem;
             color: rgba($color-white, 1);
             -webkit-transform: rotateZ(360deg);
             -moz-transform: rotateZ(360deg);
