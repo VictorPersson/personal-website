@@ -81,8 +81,11 @@
         &--back {
             color: $color-white;
             text-transform: uppercase;
-            font-weight: 200;
-            font-size: 1.85rem;
+            font-weight: 400;
+            font-size: 2rem;
+            border-bottom: 1px solid $color-grey-light-2;
+            width: 80%;
+            margin: 0 auto;
 
         }
         // background-color: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium);
@@ -115,7 +118,6 @@
     }
 
 
-
     &__link--logo {
         color: rgba($color-white, 0.7);
         -webkit-transition: .3s ease-in;
@@ -136,5 +138,14 @@
             font-size: 8rem;
             
         }
+    }
+
+    &__back-text {
+        color: $color-white;
+        font-size: 1.6rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        margin-left: .2rem;
+        margin-right: .2rem;
     }
 }

@@ -1,0 +1,27 @@
+.button-white {
+    background: $color-white;
+    color: $color-pink-dark;
+    font-size: 2rem;
+
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 25px;
+        border-radius: 5rem;
+        transition: all .3s;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: $box-shadow;
+
+    }
+
+    &:active {
+        transform: translateY(2px);
+        box-shadow: $box-shadow;
+
+    }
+}

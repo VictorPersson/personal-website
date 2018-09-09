@@ -49,11 +49,22 @@
             -webkit-transform: rotateZ(360deg);
             -moz-transform: rotateZ(360deg);
             transform: rotateZ(360deg);
+
         }
 
         &:active {
             font-size: 8rem;
         }
+    }
+
+    &__info-text {
+
+    }
+
+    &__button {
+        animation-name: moveInLeft;
+        animation-duration: 1.4s;
+        animation-timing-function: ease-out;
     }
 }
 

@@ -19,7 +19,7 @@ body {
         color: $color-purple-medium;
         
         &:hover {
-            font-weight: 600;
+           //  font-weight: 600;
         }
     }
 
@@ -33,7 +33,7 @@ body {
         color: $color-purple-medium;
 
         &:hover {
-            font-weight: 600;
+            // font-weight: 600;
         }
     }
 }
@@ -47,6 +47,8 @@ body {
     animation-name: moveInTop;
     animation-duration: 1.4s;
     animation-timing-function: ease-in;
+
+    
 }
 
 .heading-secondary {
@@ -56,8 +58,7 @@ body {
     color: $color-purple-medium;
 
     &:hover {
-        font-weight: 600;
-    }
+        font-weight: 600;    }
 }
 
 .paragraph {
