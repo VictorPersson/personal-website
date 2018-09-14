@@ -18,8 +18,11 @@ body {
         display: inline-block;
         color: $color-purple-medium;
         
-        &:hover {
-           //  font-weight: 600;
+        @include responsive(phone) {
+            font-size: 4rem;
+            animation-name: moveInTop;
+            display: block;
+
         }
     }
 
@@ -32,10 +35,13 @@ body {
         display: inline-block;
         color: $color-purple-medium;
 
-        &:hover {
-            // font-weight: 600;
+        @include responsive(phone) {
+            font-size: 3rem;
+            animation-name: moveInBottom;
+            display: block;
         }
     }
+
 }
 
 .heading-primary {

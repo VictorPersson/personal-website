@@ -10,6 +10,20 @@
 
 html {
     font-size: 62.5%; // Defines what 1 rem is, ()
+    // Sometimes media queries conflic, so the last of the 2
+    // -conflicting applies, therfore it must be placed last, as in the case with tab-normal 
+
+    @include responsive(tab-side) {
+        font-size: 56.5%;
+    }
+
+    @include responsive(tab-normal) {
+        font-size: 50%;
+    }
+
+    @include responsive(big-desktop) {
+        font-size: 74%;
+    }
 }
 
 body {
