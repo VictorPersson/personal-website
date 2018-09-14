@@ -3,18 +3,13 @@
     &__logo {
         width: 15rem;
         display: inline-block;
-
-        &:hover {
-        }
-
     }
 
     &__logo-box {
         display: inline-block;
 
-    }
-
-    &__text-box {
-
+        @include responsive(phone) {
+            display: block;
+        }
     }
 }

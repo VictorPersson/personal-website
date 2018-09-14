@@ -1,7 +1,6 @@
 body {
     font-family: 'Quicksand', sans-serif;
     line-height: 2;
-
 }
 
 .heading__front {
@@ -17,13 +16,6 @@ body {
         font-weight: 300;
         display: inline-block;
         color: $color-purple-medium;
-        
-        @include responsive(phone) {
-            font-size: 4rem;
-            animation-name: moveInTop;
-            display: block;
-
-        }
     }
 
     &--second {
@@ -34,14 +26,7 @@ body {
         font-weight: 100;
         display: inline-block;
         color: $color-purple-medium;
-
-        @include responsive(phone) {
-            font-size: 3rem;
-            animation-name: moveInBottom;
-            display: block;
-        }
     }
-
 }
 
 .heading-primary {
@@ -53,8 +38,6 @@ body {
     animation-name: moveInTop;
     animation-duration: 1.4s;
     animation-timing-function: ease-in;
-
-    
 }
 
 .heading-secondary {
@@ -63,8 +46,13 @@ body {
     text-transform: uppercase;
     color: $color-purple-medium;
 
+    @include responsive(phone) {
+        font-size: 3.8rem;
+       }
+
     &:hover {
-        font-weight: 600;    }
+        font-weight: 600;    
+    }
 }
 
 .paragraph {
