@@ -48,6 +48,7 @@ body {
 
     @include responsive(phone) {
         font-size: 3.8rem;
+        margin-top: 5rem;
        }
 
     &:hover {

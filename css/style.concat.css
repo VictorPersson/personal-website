@@ -523,10 +523,6 @@ body {
     font-weight: 300;
     display: inline-block;
     color: #c51162; }
-    @media only screen and (max-width: 37.5em) {
-      .heading__front--first {
-        font-size: 5rem;
-        animation-name: moveInTop; } }
   .heading__front--second {
     animation-name: moveInRight;
     animation-duration: 1s;
@@ -535,10 +531,6 @@ body {
     font-weight: 100;
     display: inline-block;
     color: #c51162; }
-    @media only screen and (max-width: 37.5em) {
-      .heading__front--second {
-        font-size: 3.5;
-        animation-name: moveInBottom; } }
 
 .heading-primary {
   font-size: 4rem;
@@ -554,6 +546,10 @@ body {
   font-weight: 300;
   text-transform: uppercase;
   color: #c51162; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 3.8rem;
+      margin-top: 5rem; } }
   .heading-secondary:hover {
     font-weight: 600; }
 
@@ -598,8 +594,14 @@ body {
   max-width: 114rem;
   margin: 0 auto;
   /* margin: 0 auto; centers the block element, inside another block element */ }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 8rem; } }
   .row::after {
     content: "";
     display: table;
@@ -608,6 +610,12 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -627,6 +635,9 @@ body {
 
 .header__logo-box {
   display: inline-block; }
+  @media only screen and (max-width: 37.5em) {
+    .header__logo-box {
+      display: block; } }
 
 .footer {
   padding: 10rem 0;
@@ -638,6 +649,11 @@ body {
   background: linear-gradient(to right, #6d0959, #c51162);
   -webkit-clip-path: polygon(0 8%, 100% 34%, 100% 100%, 0% 100%);
   clip-path: polygon(0 8%, 100% 34%, 100% 100%, 0% 100%); }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      -webkit-clip-path: polygon(0 20%, 100% 34%, 100% 100%, 0% 100%);
+      clip-path: polygon(0 20%, 100% 34%, 100% 100%, 0% 100%);
+      height: auto; } }
   .footer__copy-right {
     color: #fff;
     font-size: 1.2rem;
@@ -653,11 +669,19 @@ body {
       text-decoration: underline; }
   .footer__image {
     width: 18rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__image {
+        margin-top: 20rem; } }
   .footer__li {
     float: left;
     font-size: 2rem;
     list-style: none;
     padding: 1.3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__li {
+        float: none;
+        padding: 3.3rem;
+        font-size: 3rem; } }
   .footer__link {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
@@ -682,6 +706,12 @@ body {
   background: linear-gradient(rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0.3));
   -webkit-clip-path: polygon(0 28%, 100% 23%, 100% 58%, 0 60%);
   clip-path: polygon(0 28%, 100% 23%, 100% 58%, 0 60%); }
+  @media only screen and (max-width: 37.5em) {
+    .footer-background {
+      margin-top: 25rem;
+      -webkit-clip-path: polygon(0 28%, 100% 23%, 100% 100%, 0 60%);
+      clip-path: polygon(0 25%, 100% 23%, 100% 100%, 0 60%);
+      height: 500px; } }
 
 .section-1 {
   z-index: 1;
@@ -691,16 +721,29 @@ body {
   background: linear-gradient(to right, #c51162, #6d0959);
   -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%);
   clip-path: polygon(0 2%, 100% 6%, 100% 81%, 0 61%); }
+  @media only screen and (max-width: 37.5em) {
+    .section-1 {
+      height: 170vh;
+      -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 70%, 0 61%);
+      clip-path: polygon(0 2%, 100% 6%, 100% 70%, 0 61%);
+      padding: 2rem; } }
   .section-1__text {
     color: #fff;
     font-size: 1.8rem; }
   .section-1__box {
     margin-left: 13rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section-1__box {
+        margin-top: 0 !important; } }
   .section-1__li {
     padding: 1rem;
     font-size: 8.8rem;
     list-style: none;
     line-height: 1.45em; }
+    @media only screen and (max-width: 37.5em) {
+      .section-1__li {
+        float: right;
+        font-size: 4rem; } }
   .section-1__link {
     color: #fff;
     text-decoration: none; }
@@ -828,6 +871,136 @@ body {
     margin-left: .2rem;
     margin-right: .2rem; }
 
+/*
+@media only screen and (max-width: 56.25em),
+    only screen and (hover: none) {
+
+        .card {
+            height: auto;
+        
+            &__side {
+                height: auto;
+                transition: all .8s ease;
+                position: relative;
+                border-radius: 8px;
+                box-shadow: $box-shadow;
+        
+        
+                &--back {
+                    transform: rotateY(0deg);
+                    }
+                }
+        
+            &:hover &__side--front {
+                transform: rotateY(0deg);
+            }
+        
+            &__image {
+                background-size: cover;
+                height: 20rem;
+                background-blend-mode: screen;
+        
+                &--1 {
+                    background-image: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium),
+                    url(../img/politweet.png);
+                    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 77%, 70% 91%, 47% 95%, 23% 92%, 0 95%);
+                    clip-path: polygon(0% 0%, 100% 0, 100% 77%, 70% 91%, 47% 95%, 23% 92%, 0 95%);
+        
+                }
+        
+                &--2 {
+                    background-image: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium),
+                    url(../img/personal_web.png);
+                    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 68% 96%, 49% 93%, 26% 94%, 0 100%);
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 68% 96%, 49% 93%, 26% 94%, 0 100%);
+                }
+        
+                &--3 {
+                    background-image: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium),
+                    url(../img/clappy-bird.png);
+                    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 79% 93%, 51% 100%, 24% 85%, 0 78%);
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 79% 93%, 51% 100%, 24% 85%, 0 78%);
+        
+                }
+        
+                &--4 {
+                    background-image: linear-gradient(to left bottom, $color-purple-light, $color-purple-medium),
+                    url(../img/discord-bot.png);
+                    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 79% 93%, 60% 94%, 31% 93%, 0 100%);
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 79% 93%, 60% 94%, 31% 93%, 0 100%);
+                }
+            }
+        
+            &__header {
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 1.85rem;
+                color: $color-purple-dark;
+        
+                &--back {
+                    color: $color-white;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    font-size: 2rem;
+                    border-bottom: 1px solid $color-grey-light-2;
+                    width: 80%;
+                    margin: 0 auto;
+        
+                }
+            }
+        
+        
+            &__li-header {
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                padding-top: .8rem;
+        
+            }
+        
+            &__li-text {
+                font-size: 1rem;
+                list-style: none;
+                margin: 0 auto;
+                color: $color-purple-light;
+        
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                    width: 80%;
+                }
+            }
+        
+            &__li-status {
+                padding-top: .8rem;
+                font-size: 1.3rem;
+                color: $color-purple-light;
+            }
+        
+        
+            &__link--logo {
+                color: rgba($color-white, 0.7);
+                -webkit-transition: .3s ease-in;
+                -moz-transition: .3s ease-in;
+                transition: .3s ease-in;
+                font-size: 12rem;
+                margin: 0 auto;
+        
+                
+                &:hover {
+                    color: rgba($color-white, 1);
+                    -webkit-transform: rotateZ(0deg);
+                    -moz-transform: rotateZ(0deg);
+                    transform: rotateY(0deg);
+                }
+        
+                &:active {
+                    font-size: 8rem;
+                    
+                }
+            }
+        }
+    }
+
+    */
 .button-white {
   background: #fff;
   color: #ff4455;
