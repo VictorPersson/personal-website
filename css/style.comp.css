@@ -166,7 +166,10 @@ body {
       margin-right: 6rem; }
       @media only screen and (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
-          margin-right: 0; } }
+          margin-right: 0 !important; } }
+      @media only screen and (max-width: 37.5em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0 !important; } }
     @media only screen and (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
@@ -334,6 +337,9 @@ body {
   -moz-prefix: 160rem;
   position: relative;
   height: 40rem; }
+  @media only screen and (max-width: 37.5em) {
+    .card {
+      margin-bottom: 8.6rem; } }
   .card__side {
     height: 45rem;
     transition: all .8s ease;
@@ -345,6 +351,9 @@ body {
     border-radius: 8px;
     box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.18);
     overflow: hidden; }
+    @media only screen and (max-width: 37.5em) {
+      .card__side {
+        margin-right: 0 !important; } }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {

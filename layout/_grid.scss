@@ -12,8 +12,8 @@
 
         @include responsive(tab-normal) {
             margin-bottom: $gutter-vertical;
-           }
-        } 
+        }
+     }
 
 @include clearFix;
 
@@ -31,15 +31,18 @@
          margin-right: $gutter-horizontal;
 
          @include responsive(tab-normal) {
-            margin-right: 0;
+            margin-right: 0 !important;
            }
-    }
 
-    @include responsive(tab-normal) {
+           @include responsive(phone) {
+            margin-right: 0 !important;
+        }
+      }
+      
+      @include responsive(tab-normal) {
         width: 100% !important;
        }
-
-  }
+    }
 
 .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);

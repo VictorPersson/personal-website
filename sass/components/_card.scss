@@ -4,6 +4,10 @@
     position: relative;
     height: 40rem;
 
+    @include responsive(phone) {
+        margin-bottom: 8.6rem;
+    }
+
     &__side {
         height: 45rem;
         transition: all .8s ease;
@@ -16,6 +20,11 @@
         border-radius: 8px;
         box-shadow: $box-shadow;
         overflow: hidden;
+
+        @include responsive(phone) {
+            margin-right: 0 !important;
+            
+        }
 
         &--front {
             background-color: $color-white;
