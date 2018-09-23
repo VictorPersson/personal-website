@@ -17,6 +17,7 @@
         -webkit-clip-path: polygon(0 20%, 100% 34%, 100% 100%, 0% 100%);
         clip-path: polygon(0 20%, 100% 34%, 100% 100%, 0% 100%);
         height: auto;
+        margin-top: 0rem;
        }
 
     &__copy-right {
@@ -113,10 +114,9 @@
         clip-path: polygon(0 28%, 100% 23%, 100% 58%, 0 60%);
 
         @include responsive(phone) {
-            margin-top: 25rem;
             -webkit-clip-path: polygon(0 28%, 100% 23%, 100% 100%, 0 60%);
             clip-path: polygon(0 25%, 100% 23%, 100% 100%, 0 60%);
-            height: 500px;
+            height: 60px;
       }
         
 }

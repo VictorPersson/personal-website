@@ -2,18 +2,11 @@
     max-width: $grid-width;
     margin: 0 auto;
 
-    @include responsive(tab-normal) {
-        max-width: 50rem;
-       }
     /* margin: 0 auto; centers the block element, inside another block element */
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
-
-        @include responsive(tab-normal) {
-            margin-bottom: $gutter-vertical;
-        }
-     }
+    }
 
 @include clearFix;
 
