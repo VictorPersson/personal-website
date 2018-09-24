@@ -4,6 +4,12 @@
     position: relative;
     height: 40rem;
 
+    @include responsive(tab-normal) {
+        margin-bottom: 10rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
     @include responsive(phone) {
         margin-bottom: 10rem;
     }

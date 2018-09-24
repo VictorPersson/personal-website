@@ -13,6 +13,14 @@
     -webkit-clip-path: polygon(0 8%, 100% 34%, 100% 100%, 0% 100%);
     clip-path: polygon(0 8%, 100% 34%, 100% 100%, 0% 100%);
 
+    @include responsive(tab-normal) {
+        -webkit-clip-path: polygon(0 20%, 100% 34%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 20%, 100% 34%, 100% 100%, 0% 100%);
+        height: auto;
+        margin-top: 0rem;
+        height: 500px;
+       }
+
     @include responsive(phone) {
         -webkit-clip-path: polygon(0 20%, 100% 34%, 100% 100%, 0% 100%);
         clip-path: polygon(0 20%, 100% 34%, 100% 100%, 0% 100%);
@@ -50,6 +58,10 @@
 
     &__image {
         width: 18rem;
+
+        @include responsive(tab-normal) {
+            margin-top: 2rem;
+           }
 
         @include responsive(phone) {
             margin-top: 18rem;
