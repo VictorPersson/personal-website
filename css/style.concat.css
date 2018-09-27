@@ -646,6 +646,13 @@ body {
   background: linear-gradient(to right, #6d0959, #c51162);
   -webkit-clip-path: polygon(0 8%, 100% 34%, 100% 100%, 0% 100%);
   clip-path: polygon(0 8%, 100% 34%, 100% 100%, 0% 100%); }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      -webkit-clip-path: polygon(0 20%, 100% 34%, 100% 100%, 0% 100%);
+      clip-path: polygon(0 20%, 100% 34%, 100% 100%, 0% 100%);
+      height: auto;
+      margin-top: 0rem;
+      height: 500px; } }
   @media only screen and (max-width: 37.5em) {
     .footer {
       -webkit-clip-path: polygon(0 20%, 100% 34%, 100% 100%, 0% 100%);
@@ -674,6 +681,9 @@ body {
       text-decoration: underline; }
   .footer__image {
     width: 18rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__image {
+        margin-top: 2rem; } }
     @media only screen and (max-width: 37.5em) {
       .footer__image {
         margin-top: 18rem;
@@ -730,6 +740,9 @@ body {
   background: linear-gradient(to right, #c51162, #6d0959);
   -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%);
   clip-path: polygon(0 2%, 100% 6%, 100% 81%, 0 61%); }
+  @media only screen and (max-width: 56.25em) {
+    .section-1 {
+      padding: 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-1 {
       height: 170vh;
@@ -749,10 +762,15 @@ body {
     font-size: 8.8rem;
     list-style: none;
     line-height: 1.45em; }
+    @media only screen and (max-width: 56.25em) {
+      .section-1__li {
+        float: right;
+        padding: 5rem; } }
     @media only screen and (max-width: 37.5em) {
       .section-1__li {
         float: right;
-        font-size: 4rem; } }
+        font-size: 4rem;
+        padding: 1.5rem; } }
   .section-1__link {
     color: #fff;
     text-decoration: none; }
@@ -788,6 +806,11 @@ body {
   -moz-prefix: 160rem;
   position: relative;
   height: 40rem; }
+  @media only screen and (max-width: 56.25em) {
+    .card {
+      margin-bottom: 10rem;
+      margin-left: 2rem;
+      margin-right: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .card {
       margin-bottom: 10rem; } }
