@@ -82,7 +82,7 @@
 
         @include responsive(phone) {
             margin-top: 0;
-            padding: 3.3rem;
+            padding: 2rem;
             font-size: 3rem;
       }
     }
@@ -128,7 +128,7 @@
         @include responsive(phone) {
             -webkit-clip-path: polygon(0 28%, 100% 23%, 100% 100%, 0 60%);
             clip-path: polygon(0 25%, 100% 23%, 100% 100%, 0 60%);
-            height: 60px;
+            height: 100px;
       }
         
 }

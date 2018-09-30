@@ -83,8 +83,18 @@
         animation-timing-function: ease-out;
     }
 
+    &__desktop-icon {
+        @include responsive(phone) {
+            display: none !important;
+        }
+    }
+
     &__phone-icon {
-        color: green;
+        display: none !important;
+
+        @include responsive(phone) {
+            display: inline-block !important;
+        }
     }
 }
 
