@@ -701,7 +701,7 @@ body {
       .footer__li {
         margin-top: 0;
         padding: 2rem;
-        font-size: 3rem; } }
+        font-size: 2rem; } }
   .footer__link {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
@@ -741,6 +741,9 @@ body {
   -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%);
   clip-path: polygon(0 2%, 100% 6%, 100% 81%, 0 61%); }
   @media only screen and (max-width: 56.25em) {
+    .section-1 {
+      padding: 4rem; } }
+  @media only screen and (max-width: 75em) {
     .section-1 {
       padding: 4rem; } }
   @media only screen and (max-width: 37.5em) {
@@ -814,6 +817,10 @@ body {
   -moz-prefix: 160rem;
   position: relative;
   height: 40rem; }
+  @media only screen and (max-width: 75em) {
+    .card {
+      margin-left: .9rem;
+      margin-right: .9rem; } }
   @media only screen and (max-width: 56.25em) {
     .card {
       margin-bottom: 10rem;

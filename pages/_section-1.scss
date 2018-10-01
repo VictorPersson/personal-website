@@ -16,6 +16,10 @@
         padding: 4rem;
        }
 
+    @include responsive(tab-side) {
+        padding: 4rem;
+       }
+
     @include responsive(phone) {
         height: 170vh;
         -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 70%, 0 61%);
