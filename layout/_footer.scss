@@ -61,7 +61,7 @@
 
         @include responsive(tab-normal) {
             margin-top: 2rem;
-           }
+        }
 
         @include responsive(phone) {
             margin-top: 18rem;
@@ -81,9 +81,9 @@
         margin-top: 6rem;
 
         @include responsive(phone) {
-            margin-top: 0;
+            margin-top: 2rem;
             padding: 2rem;
-            font-size: 2rem;
+            font-size: 3.1rem;
       }
     }
 
