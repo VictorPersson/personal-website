@@ -28,6 +28,7 @@
         width: 100%;
         // Hides the back-part of an element
         backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
         border-radius: 8px;
         box-shadow: $box-shadow;
         overflow: hidden;

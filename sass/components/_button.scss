@@ -15,12 +15,14 @@
 
     &:hover {
         transform: translateY(-3px);
+        -webkit-transform: translateY(-3px);
         box-shadow: $box-shadow;
 
     }
 
     &:active {
         transform: translateY(2px);
+        -webkit-transform: translateY(2px);
         box-shadow: $box-shadow;
 
     }

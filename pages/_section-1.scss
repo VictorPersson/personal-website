@@ -87,8 +87,11 @@
 
     &__button {
         animation-name: moveInLeft;
+        -webkit-animation-name: moveInLeft;
         animation-duration: 1.4s;
+        -webkit-animation-duration: 1.4s;
         animation-timing-function: ease-out;
+        -webkit-animation-timing-function: ease-out;
     }
 
     &__desktop-icon {
