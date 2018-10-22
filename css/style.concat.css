@@ -464,6 +464,16 @@
     opacity: 1;
     transform: translate(7); } }
 
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20rem); }
+  80% {
+    -webkit-transform: translateX(8rem); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(7); } }
+
 @keyframes moveInTop {
   0% {
     opacity: 1;
@@ -479,6 +489,12 @@
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+@keyframes whiteToBlue {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #6200EE; } }
 
 *,
 *::after,
@@ -793,8 +809,11 @@ body {
       font-size: 8rem; }
   .section-1__button {
     animation-name: moveInLeft;
+    -webkit-animation-name: moveInLeft;
     animation-duration: 1.4s;
-    animation-timing-function: ease-out; }
+    -webkit-animation-duration: 1.4s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out; }
   @media only screen and (max-width: 37.5em) {
     .section-1__desktop-icon {
       display: none !important; } }
@@ -839,6 +858,7 @@ body {
     left: 0;
     width: 100%;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     border-radius: 8px;
     box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.18);
     overflow: hidden; }
@@ -1065,7 +1085,9 @@ body {
     transition: all .3s; }
   .button-white:hover {
     transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
     box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.18); }
   .button-white:active {
     transform: translateY(2px);
+    -webkit-transform: translateY(2px);
     box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.18); }
