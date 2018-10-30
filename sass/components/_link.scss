@@ -1,0 +1,86 @@
+.footer-links {
+    font-size: 2rem;
+    float: left;
+    margin: 70px 0;
+    line-height: 14px;
+    text-align: center;
+    padding-left: 3.5rem;
+    
+
+    &__effect, &__effect > &__span {
+        position: relative;
+        color: $color-white;
+        text-decoration: none;
+        line-height: 24px;
+        &:before, &:after {
+        content: '';
+        position: absolute;
+        transition: transform .5s ease;
+            }
+        }
+
+    &__effect {
+        display: inline-block;
+        overflow: hidden;
+        &:before, &:after {
+        right: 0;
+        bottom: 0;
+        background-color: $color-white;
+        transition: transform .3s ease;
+        
+        }
+        &:before {
+        // On it's way back, after however stops
+        width: 100%;
+        height: .1rem;
+        transform:  translateX(-100%);
+        transition-delay: .9s;
+        }
+        &:after {
+        // Right side of line
+        width: .1rem;
+        height: 100%;
+        transform:  translateY(100%);
+        transition-delay: .6s;
+        }
+        > .footer-links__span {
+        display: block;
+        padding: 1rem;
+        &:before, &:after {
+            left: 0;
+            top: 0;
+            background-color: $color-white;
+            transition: transform .3s ease;
+            }
+        &:before {
+            //Top part of line
+            width: 100%;
+            height: .1rem;
+            transform:  translateX(100%);
+            transition-delay: .3s;
+            }
+        &:after {
+            // Right side of line
+            width: .1rem; // 100% to cover it white
+            height: 100%;
+            transform:  translateY(-100%);
+            transition-delay: 0s;
+                }
+            }
+            &:hover:before, &:hover:after, &:hover > span:before, &:hover > span:after {
+            transform:  translate(0, 0);
+                }
+            &:hover:before {
+            transition-delay: 0s;
+                }
+            &:hover:after {
+            transition-delay: .3s;
+                }
+            &:hover > span:before {
+            transition-delay: .6s;
+                }
+            &:hover > span:after {
+            transition-delay: .9s;
+                }
+        }
+}
