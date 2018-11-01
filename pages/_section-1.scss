@@ -8,9 +8,10 @@
         rgba($color-purple-medium, 1),
         rgba($color-purple-dark, 1));
 
-    -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%);
-    clip-path: polygon(0 2%, 100% 6%, 100% 81%, 0 61%);
-
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%);
+        clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%);
+      }
 
     @include responsive(tab-normal) {
         padding: 4rem;
