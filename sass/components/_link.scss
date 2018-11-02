@@ -1,12 +1,18 @@
 .footer-links {
     font-size: 2rem;
     float: left;
-    margin: 70px 0;
     line-height: 14px;
     text-align: center;
-    padding-left: 3.5rem;
-    
+    margin-top: 6.5rem;
 
+    @include responsive(tab-normal) {
+        margin-left: 18rem;
+       }
+
+    &__text {
+        margin-right: .9rem;
+    }
+    
     &__effect, &__effect > &__span {
         position: relative;
         color: $color-white;
