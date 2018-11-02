@@ -311,10 +311,10 @@ body {
   @media only screen and (max-width: 75em) {
     .section-1 {
       padding: 4rem;
-      height: 140vh; } }
+      height: 155vh; } }
   @media only screen and (max-width: 56.25em) {
     .section-1 {
-      height: 100vh;
+      height: 160vh;
       -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 70%, 0 61%);
       clip-path: polygon(0 2%, 100% 6%, 100% 70%, 0 61%);
       padding: 2rem; } }
