@@ -234,6 +234,14 @@ body {
     font-size: 1.2rem;
     display: inline-block;
     margin-left: -18rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__copy-right {
+        font-size: 1.2rem;
+        padding-top: 1.2rem;
+        margin-left: 11rem;
+        border-top: 1px solid #fff;
+        width: 75%;
+        text-align: center; } }
     @media only screen and (max-width: 37.5em) {
       .footer__copy-right {
         font-size: 1.2rem;
@@ -253,7 +261,11 @@ body {
     width: 18rem; }
     @media only screen and (max-width: 56.25em) {
       .footer__image {
-        margin-top: 2rem; } }
+        margin-top: 10rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%; } }
     @media only screen and (max-width: 37.5em) {
       .footer__image {
         margin-top: 18rem;
@@ -261,25 +273,6 @@ body {
         margin-left: auto;
         margin-right: auto;
         width: 50%; } }
-  .footer__li {
-    float: left;
-    font-size: 2rem;
-    list-style: none;
-    padding: 1.6rem;
-    margin-top: 6rem; }
-    @media only screen and (max-width: 37.5em) {
-      .footer__li {
-        margin-top: 2rem;
-        padding: 2rem;
-        font-size: 3.1rem; } }
-  .footer__link {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    transition: 1s; }
-    .footer__link:hover {
-      color: #fff;
-      transform: ease-in;
-      text-decoration: underline; }
   .footer__li-logo {
     -webkit-transition: 1.5s ease-out;
     -moz-transition: 1.5s ease-out;
@@ -313,13 +306,18 @@ body {
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .section-1 {
       -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%);
-      clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%); } }
-  @media only screen and (max-width: 56.25em) {
-    .section-1 {
-      padding: 4rem; } }
+      clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%);
+      height: 140vh; } }
   @media only screen and (max-width: 75em) {
     .section-1 {
-      padding: 4rem; } }
+      padding: 4rem;
+      height: 140vh; } }
+  @media only screen and (max-width: 56.25em) {
+    .section-1 {
+      height: 100vh;
+      -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 70%, 0 61%);
+      clip-path: polygon(0 2%, 100% 6%, 100% 70%, 0 61%);
+      padding: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-1 {
       height: 170vh;
@@ -344,7 +342,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .section-1__li {
         float: right;
-        padding: 5rem; } }
+        padding: 2rem; } }
     @media only screen and (max-width: 37.5em) {
       .section-1__li {
         float: right;
@@ -381,6 +379,15 @@ body {
       .section-1__phone-icon {
         display: inline-block !important; } }
 
+@media only screen and (max-width: 56.25em) {
+  .section-1__box {
+    padding: 100px;
+    margin: 0; } }
+
+@media only screen and (max-width: 37.5em) {
+  .section-1__box {
+    display: inline-block !important; } }
+
 .section-1-background {
   height: 100vh;
   background: linear-gradient(rgba(153, 153, 153, 0.3), rgba(153, 153, 153, 0.3));
@@ -394,7 +401,7 @@ body {
 .card {
   -moz-prespective: 150rem;
   perspective: 150rem;
-  -moz-prefix: 160rem;
+  -moz-perspective: 160rem;
   position: relative;
   height: 40rem; }
   @media only screen and (max-width: 75em) {
@@ -416,8 +423,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     border-radius: 8px;
     box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.18);
     overflow: hidden; }
@@ -654,10 +661,14 @@ body {
 .footer-links {
   font-size: 2rem;
   float: left;
-  margin: 70px 0;
   line-height: 14px;
   text-align: center;
-  padding-left: 3.5rem; }
+  margin-top: 6.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .footer-links {
+      margin-left: 18rem; } }
+  .footer-links__text {
+    margin-right: .9rem; }
   .footer-links__effect, .footer-links__effect > .footer-links__span {
     position: relative;
     color: #fff;
