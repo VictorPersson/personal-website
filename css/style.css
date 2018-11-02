@@ -306,16 +306,18 @@ body {
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .section-1 {
       -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%);
-      clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%); } }
+      clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%);
+      height: 140vh; } }
+  @media only screen and (max-width: 75em) {
+    .section-1 {
+      padding: 4rem;
+      height: 140vh; } }
   @media only screen and (max-width: 56.25em) {
     .section-1 {
       height: 100vh;
       -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 70%, 0 61%);
       clip-path: polygon(0 2%, 100% 6%, 100% 70%, 0 61%);
       padding: 2rem; } }
-  @media only screen and (max-width: 75em) {
-    .section-1 {
-      padding: 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-1 {
       height: 170vh;
@@ -340,7 +342,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .section-1__li {
         float: right;
-        padding: 5rem; } }
+        padding: 2rem; } }
     @media only screen and (max-width: 37.5em) {
       .section-1__li {
         float: right;
@@ -376,6 +378,15 @@ body {
     @media only screen and (max-width: 37.5em) {
       .section-1__phone-icon {
         display: inline-block !important; } }
+
+@media only screen and (max-width: 56.25em) {
+  .section-1__box {
+    padding: 100px;
+    margin: 0; } }
+
+@media only screen and (max-width: 37.5em) {
+  .section-1__box {
+    display: inline-block !important; } }
 
 .section-1-background {
   height: 100vh;
