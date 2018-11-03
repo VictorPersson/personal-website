@@ -305,8 +305,8 @@ body {
   background: linear-gradient(to right, #c51162, #6d0959); }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .section-1 {
-      -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%);
-      clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%);
+      -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 77%, 0 61%);
+      clip-path: polygon(0 3%, 100% 6%, 100% 75%, 0 61%);
       height: 140vh; } }
   @media only screen and (max-width: 75em) {
     .section-1 {
@@ -315,14 +315,14 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-1 {
       height: 160vh;
-      -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 70%, 0 61%);
-      clip-path: polygon(0 2%, 100% 6%, 100% 70%, 0 61%);
+      -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 65%, 0 61%);
+      clip-path: polygon(0 2%, 100% 6%, 100% 65%, 0 61%);
       padding: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-1 {
       height: 170vh;
-      -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 70%, 0 61%);
-      clip-path: polygon(0 2%, 100% 6%, 100% 70%, 0 61%);
+      -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 65%, 0 61%);
+      clip-path: polygon(0 2%, 100% 6%, 100% 65%, 0 61%);
       padding: 2rem; } }
   .section-1__text {
     color: #fff;

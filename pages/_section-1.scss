@@ -9,8 +9,8 @@
         rgba($color-purple-dark, 1));
 
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%);
-        clip-path: polygon(0 3%, 100% 6%, 100% 81%, 0 61%);
+        -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 77%, 0 61%);
+        clip-path: polygon(0 3%, 100% 6%, 100% 75%, 0 61%);
         height: 140vh;
       }
 
@@ -21,15 +21,15 @@
 
     @include responsive(tab-normal) {
         height: 160vh;
-        -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 70%, 0 61%);
-        clip-path: polygon(0 2%, 100% 6%, 100% 70%, 0 61%);
+        -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 65%, 0 61%);
+        clip-path: polygon(0 2%, 100% 6%, 100% 65%, 0 61%);
         padding: 2rem;
        }
 
     @include responsive(phone) {
         height: 170vh;
-        -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 70%, 0 61%);
-        clip-path: polygon(0 2%, 100% 6%, 100% 70%, 0 61%);
+        -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 65%, 0 61%);
+        clip-path: polygon(0 2%, 100% 6%, 100% 65%, 0 61%);
         padding: 2rem;
        }
 
