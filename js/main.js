@@ -1,9 +1,26 @@
+
 $(document).ready(function () {
 
-    const color1 = "#ff4455"
-    const color2 = "#ff8899"
+    buttonPressed = false;
 
-    $(".section-1").click(function () {
+    $("#js-button").click(function () {
+
+        if (buttonPressed === false) {
+            var color1 = "#c51162"
+            var color2 = "#6d0959"
+            var vLogo = "img/v_logo_outside_peach_glow.jpg"
+            console.log("Button was pressed - is now TRUE")
+            buttonPressed = true;
+        }
+
+        else if (buttonPressed === true) {
+            var color1 = "#ff4455"
+            var color2 = "#ff8899"
+            var vLogo = "img/v_logo_outside_pink_glow.png"
+            console.log("Button was pressed - is now FALSE")
+            buttonPressed = false;
+        }
+
         $('.heading__front--first').css({
             color: color1
         });

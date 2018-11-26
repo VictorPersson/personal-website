@@ -4,6 +4,7 @@
     line-height: 14px;
     text-align: center;
     margin-top: 6.5rem;
+    
 
     @include responsive(tab-normal) {
         margin-left: 18rem;
@@ -15,6 +16,7 @@
 
     &__text {
         margin-right: .9rem;
+        
     }
     
     &__effect, &__effect > &__span {
@@ -75,3 +77,74 @@
                 }
         }
 }
+
+.general-links {
+    @include responsive(tab-normal) {
+        margin-left: 18rem;
+        
+       }
+
+    @include responsive(phone) {
+        margin-left: 0rem;
+       }
+
+    &__text {
+        margin-right: .9rem;
+    }
+    
+    &__effect, &__effect > &__span {
+        position: relative;
+        color: $color-white;
+        text-decoration: none;
+        &:before, &:after {
+        content: '';
+        position: absolute;
+        transition: transform .5s ease;
+            }
+        }
+
+    &__effect {
+       display: inline-block;
+        overflow: hidden;
+        &:before, &:after {
+        right: 0;
+        bottom: 0;
+        background-color: $color-white;
+        transition: transform .3s ease;
+        
+        }
+        &:before {
+        // On it's way back, after however stops
+        width: 100%;
+        height: .1rem;
+        transform:  translateX(-100%);
+        transition-delay: .1s;
+        }
+        
+        > .general-links__span {
+        display: block;
+        padding: 1rem;
+        &:before, &:after {
+            left: 0;
+            top: 0;
+            background-color: $color-white;
+            transition: transform .3s ease;
+                }
+            }
+            &:hover:before, &:hover:after, &:hover > span:before, &:hover > span:after {
+            transform:  translate(0, 0);
+                }
+            &:hover:before {
+            transition-delay: 0s;
+                }
+        }
+}
+
+
+
+
+
+
+
+
+
