@@ -1150,3 +1150,49 @@ body {
       transition-delay: 0s; }
     .footer-links__effect:hover:after {
       transition-delay: .3s; }
+
+@media only screen and (max-width: 56.25em) {
+  .general-links {
+    margin-left: 18rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .general-links {
+    margin-left: 0rem; } }
+
+.general-links__text {
+  margin-right: .9rem; }
+
+.general-links__effect, .general-links__effect > .general-links__span {
+  position: relative;
+  color: #fff;
+  text-decoration: none; }
+  .general-links__effect:before, .general-links__effect:after, .general-links__effect > .general-links__span:before, .general-links__effect > .general-links__span:after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease; }
+
+.general-links__effect {
+  display: inline-block;
+  overflow: hidden; }
+  .general-links__effect:before, .general-links__effect:after {
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    transition: transform .3s ease; }
+  .general-links__effect:before {
+    width: 100%;
+    height: .1rem;
+    transform: translateX(-100%);
+    transition-delay: .1s; }
+  .general-links__effect > .general-links__span {
+    display: block;
+    padding: 1rem; }
+    .general-links__effect > .general-links__span:before, .general-links__effect > .general-links__span:after {
+      left: 0;
+      top: 0;
+      background-color: #fff;
+      transition: transform .3s ease; }
+  .general-links__effect:hover:before, .general-links__effect:hover:after, .general-links__effect:hover > span:before, .general-links__effect:hover > span:after {
+    transform: translate(0, 0); }
+  .general-links__effect:hover:before {
+    transition-delay: 0s; }
