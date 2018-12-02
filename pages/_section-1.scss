@@ -51,6 +51,7 @@
     }
 
     &__li {
+        z-index: 10;
         padding: 1rem;
         font-size: 8.8rem;
         list-style: none;
@@ -70,11 +71,13 @@
     }
 
     &__link {
+        z-index: 10;
         color: $color-white;
         text-decoration: none;
     }
 
     &__li-logo {
+        z-index: 10;
         color: rgba($color-white, 0.7);
         -webkit-transition: 1.5s ease-out;
         -moz-transition: 1.5s ease-out;
