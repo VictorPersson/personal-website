@@ -6,6 +6,7 @@
 
     &:link,
     &:visited {
+        z-index: 10;
         text-transform: uppercase;
         text-decoration: none;
         display: inline-block;
@@ -15,6 +16,7 @@
     }
 
     &:hover {
+        z-index: 10;
         transform: translateY(-3px);
         -webkit-transform: translateY(-3px);
         box-shadow: $box-shadow;
@@ -22,6 +24,7 @@
     }
 
     &:active {
+        z-index: 10;
         transform: translateY(2px);
         -webkit-transform: translateY(2px);
         box-shadow: $box-shadow;
