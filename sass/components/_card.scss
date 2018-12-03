@@ -63,7 +63,7 @@
             url(../img/politweet.png);
             -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 77%, 70% 91%, 47% 95%, 23% 92%, 0 95%);
             clip-path: polygon(0% 0%, 100% 0, 100% 77%, 70% 91%, 47% 95%, 23% 92%, 0 95%);
-
+            background-blend-mode: screen;
         }
 
         &--2 {

@@ -5,6 +5,7 @@ $(document).ready(function () {
 
     $("#js-button").click(function () {
 
+
         if (buttonPressed === false) {
             var color1 = "#6DD5FA" // "#c51162"
             var color2 = "#2980B9" // "#6d0959"
@@ -49,6 +50,8 @@ $(document).ready(function () {
         });
 
         $(".header__logo").attr('src', vLogo);
+
+        $('.card__image').css('background-blend-mode', 'screen');
 
         $('.section-1').css({
             background: "-webkit-gradient(linear, right top, left bottom, from(" + color1 + "), to(" + color2 + "))"
