@@ -607,6 +607,7 @@ body {
   margin-left: 8rem !important; }
 
 canvas {
+  position: fixed;
   display: block;
   vertical-align: bottom; }
 
@@ -1123,7 +1124,7 @@ canvas {
     .footer-links {
       margin-left: 0rem; } }
   .footer-links__text {
-    margin-right: .9rem; }
+    margin-right: .8rem; }
   .footer-links__effect, .footer-links__effect > .footer-links__span {
     position: relative;
     color: #fff;
