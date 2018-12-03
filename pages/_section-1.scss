@@ -47,6 +47,7 @@
 
         @include responsive(phone) {
             margin-top: 0 !important;
+            margin-left: 0rem;
         }
     }
 

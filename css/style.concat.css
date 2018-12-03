@@ -790,7 +790,8 @@ canvas {
     margin-left: 13rem; }
     @media only screen and (max-width: 37.5em) {
       .section-1__box {
-        margin-top: 0 !important; } }
+        margin-top: 0 !important;
+        margin-left: 0rem; } }
   .section-1__li {
     padding: 1rem;
     font-size: 8.8rem;
