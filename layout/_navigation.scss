@@ -1,3 +1,37 @@
 .navigation {
-    //pass
+    &__checkbox {
+
+    }
+
+    &__button {
+
+    }
+
+    &__background {
+        z-index: 10;
+        height: 6.8rem;
+        width: 6.8rem;
+        border-radius: 50%;
+        background: orange;
+        position: fixed;
+        top: 20rem;
+        right: 3rem;
+    }
+
+    &__nav {
+
+    }
+
+    &__list {
+
+    }
+    &__item {
+
+    }
+
+    &__link {
+
+    }
+
+
 }
