@@ -448,7 +448,8 @@ canvas {
     .card__image--1 {
       background-image: linear-gradient(to left bottom, #972239, #e74c3c), url(../img/politweet.png);
       -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 77%, 70% 91%, 47% 95%, 23% 92%, 0 95%);
-      clip-path: polygon(0% 0%, 100% 0, 100% 77%, 70% 91%, 47% 95%, 23% 92%, 0 95%); }
+      clip-path: polygon(0% 0%, 100% 0, 100% 77%, 70% 91%, 47% 95%, 23% 92%, 0 95%);
+      background-blend-mode: screen; }
     .card__image--2 {
       background-image: linear-gradient(to left bottom, #972239, #e74c3c), url(../img/personal_web.png);
       -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 68% 96%, 49% 93%, 26% 94%, 0 100%);
