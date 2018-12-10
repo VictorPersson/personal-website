@@ -9,27 +9,36 @@
         rgba($color-purple-dark, 1));
 
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 77%, 0 61%);
-        clip-path: polygon(0 3%, 100% 6%, 100% 75%, 0 61%);
-        height: 140vh;
+        -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 85vh, 0 61%);
+        clip-path: polygon(0 3%, 100% 6%, 100% 95vh, 0 61%);
+        height: 130vh;
       }
 
     @include responsive(tab-side) {
         padding: 4rem;
-        height: 155vh;
-        }
+        height: 180vh;
+        -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 105vh, 0 61%);
+        clip-path: polygon(0 2%, 100% 6%, 100% 105vh, 0 61%);
+       }
 
     @include responsive(tab-normal) {
-        height: 160vh;
-        -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 65%, 0 61%);
-        clip-path: polygon(0 2%, 100% 6%, 100% 65%, 0 61%);
+        height: 130vh;
+        -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 90vh, 0 61%);
+        clip-path: polygon(0 2%, 100% 6%, 100% 65vh, 0 61%);
         padding: 2rem;
        }
 
     @include responsive(phone) {
-        height: 170vh;
-        -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 65%, 0 61%);
-        clip-path: polygon(0 2%, 100% 6%, 100% 65%, 0 61%);
+        height: 180vh;
+        -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 100vh, 0 61%);
+        clip-path: polygon(0 2%, 100% 6%, 100% 100vh, 0 61%);
+        padding: 2rem;
+       }
+
+       @include responsive(phone-small) {
+        height: 196vh;
+        -webkit-clip-path: polygon(0 3%, 100% 6%, 100% 115vh, 0 61%);
+        clip-path: polygon(0 2%, 100% 6%, 100% 115vh, 0 61%);
         padding: 2rem;
        }
 

@@ -1,36 +1,140 @@
 .navigation {
-    &__checkbox {
 
+    &__checkbox {
+        display: none;
     }
 
     &__button {
+        z-index: 12;
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+        background: $color-white;
+        position: fixed;
+        top: 3.7rem;
+        right: 2.5rem;
+        box-shadow: $box-shadow-glow-purple;
 
+        // Icon
+        text-align: center;
+        font-size: 3.9rem;
+    }
+
+    &__icon {
+        color: $color-purple-dark;
+        transition: all .3s;
+
+        &:hover {
+            transform: translateY(-3px);
+            -webkit-transform: translateY(-3px);
+            font-size: 4.1rem;
+        }
+        &:active {
+            transform: translateY(-1px);
+            -webkit-transform: translateY(-1px);
+        }
     }
 
     &__background {
-        z-index: 10;
+        z-index: 9;
         height: 6.8rem;
         width: 6.8rem;
         border-radius: 50%;
-        background: orange;
+        background: linear-gradient($color-purple-medium, $color-purple-dark);
         position: fixed;
-        top: 20rem;
+        top: 4rem;
         right: 3rem;
+        transition: transform .8s cubic-bezier(0.86, -0, 0.07, 1);
+
+        @include responsive(tab-port) {
+            top: 5rem;
+            right: 5rem;
+          }
+      
+          @include responsive(phone) {
+            top: 4rem;
+            right: 3rem;
+          }
     }
 
     &__nav {
+        z-index: 11;
+        height: 65vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        // Hides the menu when not active
+        opacity: 0;
+        width: 0;
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        
+
+    }
+
+    &__header {
+        color: $color-white;
+        text-align: center;
+        font-weight: 200;
+        font-size: 6rem;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+
+        @include responsive(phone) {
+            font-size: 3.4rem;
+          }
 
     }
 
     &__list {
-
+        position: absolute;
+        left: 50%;
+        top: 82%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
     }
     &__item {
-
+        margin: 1rem;
     }
 
     &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            padding: 1rem 1rem;
+            font-size: 4rem;
+            color: $color-white;
+            font-weight: 300;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient(130deg, transparent 0%, transparent 50%, $color-white 50%);
+            background-size: 240%;
+            transition: all .5s;
 
+            @include responsive(phone) {
+                font-size: 2.8rem;
+              }
+        }
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-purple-light;
+            transform: translateX(-3rem);
+        }
+
+
+    }
+
+    // ~ = Selects not the closed sibling (navigation_button), but insted all siblings i our case background
+
+    &__checkbox:checked ~ &__background {
+        transform: scale(80);
+    }
+
+    &__checkbox:checked ~ &__nav {
+        opacity: 1;
+        width: 100%;
     }
 
 
