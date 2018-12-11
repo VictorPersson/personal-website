@@ -16,18 +16,24 @@
         box-shadow: $box-shadow-glow-purple;
 
         // Icon
+        font-size: 4.1rem;
         text-align: center;
-        font-size: 3.9rem;
+
+        @include responsive(phone) {
+            top: 13.6rem;
+            right: 2.6rem;
+          }
     }
 
     &__icon {
         color: $color-purple-light;
         transition: all .3s;
+        padding: 2rem;
+        
 
         &:hover {
             transform: translateY(-3px);
             -webkit-transform: translateY(-3px);
-            font-size: 4.1rem;
         }
         &:active {
             transform: translateY(-1px);
@@ -52,7 +58,7 @@
           }
       
           @include responsive(phone) {
-            top: 4rem;
+            top: 14rem;
             right: 3rem;
           }
     }
