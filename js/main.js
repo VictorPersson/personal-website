@@ -7,17 +7,17 @@ $(document).ready(function () {
 
 
         if (buttonPressed === false) {
-            var color1 = "#6DD5FA" // "#c51162"
-            var color2 = "#2980B9" // "#6d0959"
-            var vLogo = "img/v_logo_outside_ice.png"
+            var color1 = "#ff4455" // "#6DD5FA" "#c51162"
+            var color2 = "#ff8899"  // "#2980B9" "#6d0959"
+            var vLogo = "img/v_logo_outside_peach_glow.jpg"
             console.log("Button was pressed - is now TRUE")
             buttonPressed = true;
         }
 
         else if (buttonPressed === true) {
-            var color1 = "#972239" // "#ff4455"
-            var color2 = "#e74c3c" // "#ff8899"
-            var vLogo = "img/v_logo_outside_christmas.png"
+            var color1 = "#6d0959" // "#972239"
+            var color2 = "#c51162" // "#e74c3c"
+            var vLogo = "/img/v_logo_outside_pink_glow.png"
             console.log("Button was pressed - is now FALSE")
             buttonPressed = false;
         }
@@ -72,7 +72,12 @@ $(document).ready(function () {
         $('.card__image--4').css({
             background: "-webkit-gradient(linear, right top, left bottom, from(" + color1 + "), to(" + color2 + "))"
         });
-
+        $('.navigation__background').css({
+            background: "-webkit-gradient(linear, right top, left bottom, from(" + color1 + "), to(" + color2 + "))"
+        });
+        $('.navigation__icon').css({
+            color: color2
+        });
     });
 
     $("#nav_icon").click(function () {
