@@ -1,8 +1,8 @@
 # Personal website - Victor Persson
-Built using SASS, SCSS and JavaScript <br> Now live beta: www.victorp.se
+Built using SASS and JavaScript <br> 
  #### NOTE: This GitHub repository was uploaded by a developer for developers. The idea is to showcase my workflow, file structure and tools I use when developing websites. Therfore, there will be no finalized or minimized .css file, hence all the raw SCSS and SASS files. 
  ---
-#### How to open in "dev mode":
+#### How to use:
 <ol>
   <li>Clone the GitHub repo</li>
   <li>Head on over to your terminal/CMD, navigate to the relevant repo folder/dic</li>
